@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio</title>
+    <meta name="description" content="Professional Portfolio of a JUPITER R">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Dev<span>Portfolio</span>.</a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-subtitle fade-in-up">Hello, I'm</p>
+                    <h1 class="hero-title fade-in-up delay-1">JUPITER R</h1>
+                    <h2 class="hero-role fade-in-up delay-2">I am a &nbsp;<span class="typing-text"></span><span
+                            class="cursor"></span></h2>
+                    <p class="hero-description fade-in-up delay-3">
+                        Computer Science undergraduate specializing in machine learning and data-driven applications.
+                        Built and deployed NLP and predictive models using Python, scikit-learn, and BERT. Strong
+                        problem-solving background with hackathon wins and real-world deployments.
+                    </p>
+                    <div class="hero-buttons fade-in-up delay-4">
+                        <a href="#projects" class="btn btn-primary">View Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <!-- Optional: Hero Image or Abstract Graphic can go here -->
+            </div>
+            <div class="scroll-down-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section reveal-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <!-- Placeholder for a user image, using a gradient placeholder for privacy/generic use -->
+                        <div class="about-image-placeholder"></div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Machine Learning and Data Science Enthusiast</h3>
+                        <p>
+                            I am a Computer Science Engineering student driven by curiosity at the intersection of data,
+                            intelligence, and impact. I see code as more than instructions—it is a medium to uncover
+                            patterns, translate complexity into clarity, and build systems that make informed,
+                            real-world decisions.
+                        </p>
+                        <p>
+                            My academic and project journey reflects a balance of discipline and innovation, with
+                            hands-on work in Machine Learning, NLP, and predictive modeling. Through internships,
+                            hackathons, and continuous experimentation, I have developed a calm, analytical approach to
+                            problem-solving and a forward-looking mindset focused on building scalable, responsible, and
+                            impactful technology.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">600+</span>
+                                <span class="stat-label">SkillRack Problems</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Internships</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">9.1</span>
+                                <span class="stat-label">CGPA</span>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/12wZgzkotOswRNBpsFtiLHAkwA9tNs0rP/view?usp=sharing"
+                            class="btn btn-primary">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section reveal-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <p class="section-subtitle">Technical Proficiency</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming & Machine Learning</h3>
+                        <div class="skill-bars-wrapper">
+                            <div class="skill-bar-item" data-percentage="90">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item" data-percentage="80">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item" data-percentage="85">
+                                <div class="skill-info">
+                                    <span>Machine Learning (scikit-learn)</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item" data-percentage="70">
+                                <div class="skill-info">
+                                    <span>Deep Learning (NLP/BERT)</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item" data-percentage="75">
+                                <div class="skill-info">
+                                    <span>Web (HTML/CSS/JS/React)</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Databases</h3>
+                        <div class="skill-bars-wrapper">
+                            <div class="skill-bar-item" data-percentage="85">
+                                <div class="skill-info">
+                                    <span>MySQL</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item" data-percentage="90">
+                                <div class="skill-info">
+                                    <span>GitHub / VS Code</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item" data-percentage="80">
+                                <div class="skill-info">
+                                    <span>Google Colab / PyCharm</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item" data-percentage="95">
+                                <div class="skill-info">
+                                    <span>AI Tools (ChatGPT, Claude, Gemini)</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section reveal-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">Recent Works</p>
+                </div>
+
+                <!-- Project Slider -->
+                <div class="project-slider-container">
+                    <div class="slider-wrapper">
+                        <!-- Project Card 1 -->
+                        <div class="project-slide active">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="image-placeholder"
+                                        style="background-image: url('assets/images/slide1.png');"></div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>AI Sentiment Analysis</h3>
+                                    <p class="project-cat">NLP & Web App</p>
+                                    <p class="project-desc">NLP system using BERT for sentiment/emotion classification
+                                        with a React dashboard. Achieved 2nd Runner-Up in competition.</p>
+                                    <div class="project-tags">
+                                        <span>Python</span><span>BERT</span><span>React</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-sm btn-outline">Demo</a>
+                                        <a href="#" class="btn btn-sm btn-outline">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 2 -->
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="image-placeholder"
+                                        style="background-image: url('assets/images/slide2.png');"></div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Student Performance Predictor</h3>
+                                    <p class="project-cat">Machine Learning</p>
+                                    <p class="project-desc">ML models predicting student performance with 92.41%
+                                        accuracy. Deployed using Streamlit.</p>
+                                    <div class="project-tags">
+                                        <span>Python</span><span>scikit-learn</span><span>Streamlit</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-sm btn-outline">Demo</a>
+                                        <a href="#" class="btn btn-sm btn-outline">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 3 -->
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="image-placeholder"
+                                        style="background-image: url('assets/images/slide3.png');"></div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Code Duel</h3>
+                                    <p class="project-cat">Web Platform</p>
+                                    <p class="project-desc">Online PvP Coding Platform with real-time matchmaking,
+                                        leaderboards, and anti-cheat measures.</p>
+                                    <div class="project-tags">
+                                        <span>Web Dev</span><span>Real-time</span><span>Gamification</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-sm btn-outline">Demo</a>
+                                        <a href="#" class="btn btn-sm btn-outline">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <button class="slider-btn prev-btn">&#10094;</button>
+                    <button class="slider-btn next-btn">&#10095;</button>
+
+                    <div class="slider-dots">
+                        <!-- Dots generated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Education -->
+        <section id="experience" class="section experience-section reveal-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Qualification</h2>
+                    <p class="section-subtitle">My Journey</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="date">2 Months</span>
+                            <h3>Data Science Intern</h3>
+                            <h4>Technex'25 – IIT (BHU) Varanasi</h4>
+                            <p>Worked on data science problems involving data preprocessing and analysis. Applied
+                                Python-based analytics and machine learning concepts in a national-level initiative.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <span class="date">1 Month</span>
+                            <h3>Data Analyst Trainee</h3>
+                            <h4>MedTourEasy</h4>
+                            <p>Performed data cleaning and exploratory data analysis. Conducted statistical studies on
+                                health data and generated analytical business reports.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="date">2023 - 2027</span>
+                            <h3>B.Tech CSE</h3>
+                            <h4>Manakula Vinayagar Institute of Technology</h4>
+                            <p>Current CGPA: 9.1. Specializing in Machine Learning and Data-driven applications.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <span class="date">2020 - 2022</span>
+                            <h3>Higher Secondary</h3>
+                            <h4>Petit Seminaire Higher Secondary School</h4>
+                            <p>Completed with 88.6%. Focused on Computer Science and Mathematics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications -->
+        <section id="achievements" class="section reveal-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements</h2>
+                    <p class="section-subtitle">Awards & Certifications</p>
+                </div>
+
+                <ul class="achievements-list">
+                    <li>3rd Place – Castilo’25 Hackathon, MVIT (Cash Prize)</li>
+                    <li>Participant – Fusion Forge’25 Hackathon, VelTech University (Cash Award)</li>
+                    <li>National-Level Participant – Ethos 2024 Hackathon, IIT Guwahati</li>
+                    <li>Solved 600+ programming problems on SkillRack</li>
+                    <li>Participant – Dr. KALAM YOUNG ACHIEVER AWARD</li>
+                </ul>
+
+                <div class="section-header" style="margin-top: 4rem; margin-bottom: 2rem;">
+                    <h2 class="section-title" style="font-size: 1.8rem;">Certifications</h2>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="certification-card">
+                        <h4>Python for Data Science</h4>
+                        <p>IBM</p>
+                    </div>
+                    <div class="certification-card">
+                        <h4>AI/ML for Geodata Analysis</h4>
+                        <p>ISRO</p>
+                    </div>
+                    <div class="certification-card">
+                        <h4>Data Analytics</h4>
+                        <p>GOOGLE</p>
+                    </div>
+                    <div class="certification-card">
+                        <h4>Web Development Fundamentals</h4>
+                        <p>IBM</p>
+                    </div>
+                    <div class="certification-card">
+                        <h4>SQL (Basic)</h4>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section reveal-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">Get in Touch</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="icon">Example</div>
+                            <h3>Email</h3>
+                            <p>jupiter01092004@gmail.com</p>
+                            <p>Send a message anytime!</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon">Example</div>
+                            <h3>Location</h3>
+                            <p>Puducherry, India</p>
+                            <p>Available for Remote Work</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" " class="form-input">
+                            <label for="name" class="form-label">Name</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" " class="form-input">
+                            <label for="email" class="form-label">Email</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder=" " class="form-input" rows="5"></textarea>
+                            <label for="message" class="form-label">Message</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary ripple-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Dev<span>Portfolio</span>.</div>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Gh</a>
+                    <a href="#" class="social-icon">Tw</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jupiter R. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scroll-top-btn" id="scrollTopBtn">&#8679;</a>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Optional: Dynamic Year
+        // document.querySelector('.footer-bottom p').innerHTML = `&copy; ${new Date().getFullYear()} Jupiter R. All Rights Reserved.`;
+    </script>
+</body>
+
+</html>
