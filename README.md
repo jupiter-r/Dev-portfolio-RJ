@@ -1,2 +1,0 @@
-# Dev-portfolio-RJ
-A PERSONAL PORTFOLIO
